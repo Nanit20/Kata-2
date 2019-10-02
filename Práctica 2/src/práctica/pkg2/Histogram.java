@@ -1,8 +1,11 @@
 package práctica.pkg2;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Histogram {
-    private Object counts;
-    private final Map<Integer, Integer>
+    
+    private final Map<Integer, Integer> counts= new HashMap<>();
 
     Histogram(int... values) {
         for (int value:values)
@@ -10,7 +13,7 @@ public class Histogram {
     }
     
     public Set<Integer> getValues(){
-        return counts.ketSet();
+        return counts.keySet();
     }
 
     public int getCount (int value){
